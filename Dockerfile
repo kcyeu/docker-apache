@@ -1,6 +1,8 @@
 FROM kcyeu/ubuntu:latest
 MAINTAINER Kuo-Cheng Yeu <kmd@mikuru.tw>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 RUN apt-get -qq update && apt-get -qqy install \ 
     apache2-mpm-worker
     
